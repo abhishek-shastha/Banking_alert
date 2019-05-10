@@ -34,6 +34,6 @@ public class KafkaProducerService {
 	public void send(AlertGroupEntry alertGroup) {
 		
 		//Sending alert group details to AlertGroups kafka topic 
-		kafkaTemplate.send("dk", new AlertGroupId(alertGroup.getGroupId()), alertGroup);
+		kafkaTemplate.send("Alert", new AlertGroupId(alertGroup.getGroupId()), alertGroup);
 }
 }
