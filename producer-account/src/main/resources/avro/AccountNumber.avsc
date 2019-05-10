@@ -1,0 +1,12 @@
+{
+  "namespace": "com.shastha.kafka",
+  "type": "record",
+  "name": "AccountNumber",
+  "fields": [
+    {
+      "doc": "Account Identification",
+      "name": "AccountNumber",
+      "type": "string"
+    }
+  ]
+}

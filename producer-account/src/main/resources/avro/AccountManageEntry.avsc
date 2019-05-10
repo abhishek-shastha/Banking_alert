@@ -1,0 +1,56 @@
+{
+  "namespace": "com.shastha.kafka",
+  "type": "record",
+  "name": "AccountManageEntry",
+  "fields": [
+    {
+      "doc": "Account Identification",
+      "name": "AccountNumber",
+      "type": "string"
+    },
+    {
+      "doc": "Account Type",
+      "name": "accountType",
+      "type": "string"	
+    },
+    {
+      "doc": "CustomerIds",
+      "name": "customerIds",
+      "type": {
+                "type" : "array",
+                "items": {
+                           "name":"CustomerIds",
+			   			   "type":"string",
+                           "fields":[
+				                     {
+				                      "name":"customerIds",
+                                      "type":"string"
+				                      }
+                                    ]
+                         }
+              }
+    },
+    {
+    	"doc": "Alert Group",
+    	"name": "alertGroup",
+    	 "type": "string"
+    },
+    {
+	"doc":"Alert Status",
+	"name":"alertStatus",
+	"type":"boolean"
+    },
+    {
+	"doc":"Available Balance",
+	"name":"availableBalance",
+	"type":"double"
+    },
+    {
+	"doc":"Actual Balance",
+	"name":"actualBalance",
+	"type":"double"
+
+    }
+    
+  ]
+}
