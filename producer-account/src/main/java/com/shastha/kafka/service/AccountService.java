@@ -29,7 +29,7 @@ public class AccountService {
 	public void produceAccount(AccountManageEntry addAccount)
 	{
 		//Topic is created and send message in key,value pair.
-		kafkaTemplate.send("account-details", new AccountNumber(addAccount.getAccountNumber()), addAccount);
+		kafkaTemplate.send("account", new AccountNumber(addAccount.getAccountNumber()), addAccount);
 	}
 
 }
