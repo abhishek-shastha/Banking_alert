@@ -32,7 +32,7 @@ public class ConsumerAlertService {
 	 * @param consumerRecord This consumer record will store the data, which is reading from kafka topic
 	 * 
 	 */
-	@KafkaListener(topics = {"AlertGroups"})
+	@KafkaListener(topics = {"dk"})
     public void readTopic(ConsumerRecord<AlertGroupId,AlertGroupEntry> consumerRecord) {
 		
 		//Adding data from consumerRecord to list object called data
