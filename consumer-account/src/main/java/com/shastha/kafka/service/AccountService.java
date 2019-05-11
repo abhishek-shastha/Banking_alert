@@ -29,7 +29,7 @@ public class AccountService {
 	 * 
 	 * @param retrieve all messages from topic in key-value pair hold it in consumer record object.
 	 */
-	@KafkaListener(topics = {"account"})
+	@KafkaListener(topics = {"accounts"})
 	public void readMessage(ConsumerRecord<AccountNumber, AccountManageEntry> consumerRecord)
 	{
 		//

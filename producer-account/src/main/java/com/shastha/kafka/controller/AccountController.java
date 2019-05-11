@@ -29,7 +29,7 @@ public class AccountController {
 	 * @param account This parameter accepts account details.
 	 *  
 	 */
-	@PostMapping("/add")
+	@PostMapping("/addAccount")
 	public void addAccount(@RequestBody Account account)
 	{
 		
