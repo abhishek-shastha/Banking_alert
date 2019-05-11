@@ -23,7 +23,7 @@ public class CustomerService
 	//creating an ArrayList object
 	ArrayList<CustomerEntry>list=new ArrayList<CustomerEntry>();
 	//reading from topic name customer-details using KafkaLitsener
-	@KafkaListener(topics= {"customer-details"})
+	@KafkaListener(topics= {"customers"})
 	/**
 	 * This method is used store records retrieved using KafkaLitsener.
 	 * The received record is stored into an ArrayList.

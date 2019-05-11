@@ -39,7 +39,7 @@ public class CustomerService {
   {
 	  
 	//Sending message into kafka-topic customer-details.
-	producerTemp.send("customer-details", new CustomerId(customer.getCustomerId()), customer);
+	producerTemp.send("customers", new CustomerId(customer.getCustomerId()), customer);
 	
   }
 }
