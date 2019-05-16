@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import com.shastha.kafka.service.AccountService;
+import org.springframework.web.bind.annotation.CrossOrigin;
 /**
  * This controller class have get mapping which gives all accounts detail.
  * 
