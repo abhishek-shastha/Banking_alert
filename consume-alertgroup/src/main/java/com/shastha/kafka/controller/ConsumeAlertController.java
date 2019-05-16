@@ -13,6 +13,7 @@ import com.shastha.kafka.service.ConsumerAlertService;
  * @version 1.0
  * 
  */
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 public class ConsumeAlertController {
 	

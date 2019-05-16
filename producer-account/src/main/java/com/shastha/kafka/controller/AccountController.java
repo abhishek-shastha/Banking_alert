@@ -17,6 +17,7 @@ import com.shastha.kafka.service.AccountService;
  * @version 1.0
  * 
  */
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 public class AccountController {
 	

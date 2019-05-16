@@ -18,6 +18,7 @@ import com.shastha.kafka.service.CustomerService;
  * @version 1.0
  *
  */
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 public class ConsumerController 
 {
